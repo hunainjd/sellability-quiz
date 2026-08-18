@@ -8,11 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    // runs auto before npm run deploy; builds vite
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

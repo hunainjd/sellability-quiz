@@ -1,0 +1,91 @@
+
+/* src/components/EmailGate.css */
+
+.email-gate {
+  width: 100%;
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-navy-10);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.email-gate__heading {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin: 0 0 var(--space-1);
+}
+
+.email-gate__body {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--color-navy-soft);
+  margin: 0 0 var(--space-3);
+}
+
+.email-gate__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: stretch;
+}
+
+.email-gate__input {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-navy-20);
+  border-radius: var(--radius);
+  background: var(--color-offwhite);
+  color: var(--color-navy);
+}
+
+.email-gate__input[aria-invalid="true"] {
+  border-color: #b3452c;
+}
+
+.email-gate__error {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: #b3452c;
+  text-align: left;
+}
+
+.email-gate__submit {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  background: var(--color-gold);
+  border: none;
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-4);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.email-gate__submit:hover {
+  background: #cba955;
+}
+
+.email-gate__skip {
+  display: block;
+  margin: var(--space-3) auto 0;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--color-navy-soft);
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.email-gate__confirmation {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-navy);
+  margin: 0;
+}
