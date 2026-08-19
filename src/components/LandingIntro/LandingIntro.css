@@ -1,5 +1,12 @@
 /* src/components/LandingIntro.css */
 
+.landing-intro__logo {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto var(--space-5);
+}
+
 .landing-intro {
   width: 100%;
   max-width: var(--max-width);
