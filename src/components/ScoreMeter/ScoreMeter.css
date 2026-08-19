@@ -1,0 +1,43 @@
+/* src/components/ScoreMeter/ScoreMeter.css */
+
+.score-meter {
+  width: 100%;
+  margin: var(--space-4) 0 var(--space-5);
+}
+
+.score-meter__track {
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    #C1443C 0%,
+    #C1443C 33.33%,
+    var(--color-gold) 33.33%,
+    var(--color-gold) 66.66%,
+    #4C7A62 66.66%,
+    #4C7A62 100%
+  );
+}
+
+.score-meter__marker {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-navy);
+  border: 2px solid var(--color-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transform: translate(-50%, -50%);
+  transition: left 0.4s ease;
+}
+
+.score-meter__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-1);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-navy-soft);
+}
